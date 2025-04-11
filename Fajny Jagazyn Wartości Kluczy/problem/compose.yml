@@ -1,0 +1,9 @@
+# docker compose up
+
+services:
+  chall:
+    build:
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 8088:1024
